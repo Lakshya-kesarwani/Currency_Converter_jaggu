@@ -59,5 +59,5 @@ def main():
     st.markdown("Currency Converter Chatbot, July 2024. Made with ❤️ by Lakshya")
 
 if __name__ == "__main__":
-    main()
-    app.run(debug=True)
+    # main()
+    streamlit-app.run(debug=True)
