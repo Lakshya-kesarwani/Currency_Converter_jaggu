@@ -24,6 +24,7 @@ def index():
             'fulfillmentText':"{} {} is {} {}".format(amount,source_currency,final_amount,target_currency)
         }
         return jsonify(response)
+    main()
 def fetch_conv_factor(source,target):
     result = client.latest(source, currencies=[target])
     value = result['data'][target]['value']
