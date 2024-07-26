@@ -2,3 +2,7 @@ streamlit
 requests
 flask
 currencyapicom
+Flask 
+gunicorn
+sqlalchemy
+flask
