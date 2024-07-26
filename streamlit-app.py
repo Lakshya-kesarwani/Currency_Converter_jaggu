@@ -24,6 +24,10 @@ def index():
             'fulfillmentText':"{} {} is {} {}".format(amount,source_currency,final_amount,target_currency)
         }
         return jsonify(response)
+def fetch_conv_factor(source,target):
+    result = client.latest(source, currencies=[target])
+    value = result['data'][target]['value']
+    return value
 def main():
     st.set_page_config(page_title="Currency Converter Chatbot", page_icon="💱", layout="centered")
     custom_css = """
